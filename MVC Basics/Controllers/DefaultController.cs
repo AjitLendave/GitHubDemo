@@ -13,5 +13,11 @@ namespace MVC_Basics.Controllers
         {
             return View();
         }
+
+
+        public ActionResult IndexAction()
+        {
+            return View();
+        }
     }
 }
