@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+@model CRUDusingADO.NETinMVC.Models.Student
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <p>Details of Student :[@Html.DisplayFor(model => model.Name)]</p>
+        <table>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.RollNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.RollNo)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Age)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Email)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.DoB)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DoB)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.City)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.TrainerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.TrainerId)
+                </td>
+            </tr>
+            @Html.ActionLink("Back", ("Index"))
+        </table>
+    </div>
+</body>
+</html>

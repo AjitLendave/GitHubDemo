@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = Layout = null;  //if you dont want to use layout or want diff layout
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Index", "Index")
+        <h2>This is index1 page</h2>
+    </div>
+
+    @Html.Partial("_PartialView")
+</body>
+</html>

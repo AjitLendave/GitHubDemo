@@ -1,0 +1,97 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model CRUDusingADO.NETinMVC.Models.Student
+@using CRUDusingADO.NETinMVC.Models
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h2>Create New Student</h2>
+    @using (Html.BeginForm("Create", "Student", FormMethod.Post))
+    {
+        <table>
+
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Name)
+                </td>
+                <td>
+                    : @Html.EditorFor(model => model.Name)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Age)
+                </td>
+                <td>
+                    :@Html.EditorFor(model => model.Age)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.Email)
+                </td>
+                <td>
+                    :@Html.EditorFor(model => model.Email)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.DoB)
+                </td>
+                <td>
+                    :@Html.EditorFor(model => model.DoB)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.City)
+                </td>
+                <td>
+                    :@Html.EditorFor(model => model.City)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.TrainerId)
+                </td>
+                <td>
+                    :@Html.EditorFor(model => model.TrainerId)
+                </td>
+                <br />
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Create" />
+                </td>
+                <td>
+                    <input type="button" value="Reset" />
+                </td>
+                <br />
+            </tr>
+
+
+        </table>
+    }
+
+    @Html.ActionLink("Back", "Index")
+
+    @if (ViewBag.Error != null)
+    {
+        <p> @ViewBag.Error . Student Creation Failed </p>
+    }
+
+</body>
+</html>

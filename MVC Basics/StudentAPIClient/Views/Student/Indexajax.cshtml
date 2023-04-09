@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Indexajax";
+}
+
+<h2>Indexajax</h2>
+
+<table class="table table-bordered" id="Student">
+    <thead>
+        <tr>
+            <td>RollNo</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+        </tr>
+    </thead>
+    <tbody>
+       
+    </tbody>
+</table>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+</script>
+
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://localhost:44305/Student/Indexajax',
+                method:'Get',
+            success: function (response) {
+                   //student array
+              
+                var tbody = $('table tbody')
+
+                for (var i = 0; i = response.length; i++)
+                {
+                    var row = '<tr>';
+                    row += '<td>' + response[i].RollNo + '<td>';
+                    row += '<td>' + response[i].Name + '<td>';
+                    row += '<td>' + response[i].Age + '<td>';
+                    row += '<td>' + response[i].Gender + '<td>';
+                        row += '</tr>';
+
+                    tbody.append(row);
+                }
+            },
+            error: function(reason)
+            {
+                alert(reason);
+            }
+        });
+
+    });
+</script>

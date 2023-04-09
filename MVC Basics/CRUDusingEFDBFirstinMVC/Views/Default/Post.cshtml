@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Post";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Post</h2>
+
+@using (Html.BeginForm("Post", "Default", FormMethod.Post))
+{
+        <lable>Comments</lable> 
+        @Html.TextArea("Comment", new { rows = "5", cols = "70" })
+
+    <br />
+    <input type="submit" value="Create Post" />
+
+    if(ViewBag.Messege != null)
+    {
+    <p>@ViewBag.Messege</p>
+    }
+
+ }
+

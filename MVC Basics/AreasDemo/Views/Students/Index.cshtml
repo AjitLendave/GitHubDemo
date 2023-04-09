@@ -1,0 +1,44 @@
+﻿@using System.Web.Optimization;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Main View</h2>
+
+
+@*<script src="~/Scripts/JavaScript1.js"></script>
+    <script src="~/Scripts/JavaScript2.js"></script>
+    <script src="~/Scripts/JavaScript3.js"></script>*@
+<script src="~/Scripts/jquery-1.8.0.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+@Scripts.Render("~/bundles/MyJsBundles")
+
+@Ajax.ActionLink("Partial View 1", "PartialView1",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "divPartial",
+        InsertionMode = InsertionMode.Replace
+    })
+
+@Ajax.ActionLink("Partial View 2", "PartialView2",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "divPartial",
+        InsertionMode = InsertionMode.Replace
+    })
+
+@Ajax.ActionLink("Partial View 3", "PartialView3",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "divPartial",
+        InsertionMode = InsertionMode.Replace
+    })
+
+@Html.ActionLink("Partial View 1", "PartialView1", "Students")
+
+<div id="divPartial"></div>

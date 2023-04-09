@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery-3.6.3.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My Training School</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            @*<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("My Page", "Index", "Home", new { area = ""}, new { @class ="navbar-band" })
+         </div>
+        <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+         </ul>*@
+
+
+            <title>Bootstrap Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            @Html.ActionLink("My Page", "Index", "students", new { area = "" }, new { @class = "navbar-band" })
+            @Html.ActionLink("Trainers", "Index", "Trainers")
+            @Html.ActionLink("Students", "Index", "students")
+            @Html.ActionLink("Posts", "Post", "Default")
+
+            <a href="~/Accounts/Register"><span class="glyphicon glyphicon-user">Sign Up</span></a>
+            <a href="~/Accounts/Login"><span class="glyphicon glyphicon-log-in">Login</span></a>
+            <span>Welcome to My Page</span>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script src="~/Scripts/jquery-3.6.3.min.js"></script>
+
+
+            <script src="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"></script>
+            <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js
+"></script>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+</body>
+</html>

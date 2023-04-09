@@ -1,0 +1,35 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Index 1", "Index1")
+        <h2>This is Index Page</h2>
+    </div>
+
+    @Html.Partial("_PartialView", "Yogesh Kale")
+
+    @*@{ 
+        Html.RenderPartial("_PartialView");
+    }*@
+
+    @*@Html.Action("PartialViewContent")*@
+
+    @*@{ 
+        Html.RenderAction("PartialViewContent");
+    }*@
+
+</body>
+</html>
+
+@section mysection{
+<div>
+    <h3>This is another dynamic Section</h3>
+    </div>
+}

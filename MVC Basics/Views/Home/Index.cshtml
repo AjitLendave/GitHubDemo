@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>This is Index View Containt</h2>
+        @*<h3>@ViewBag.Name</h3>*@
+
+        @*<h3>@ViewData["Name"]</h3>*@
+
+        @*<ul>
+            @foreach (string s in (string[])ViewData["employees])
+            {
+                <li>@s</li>
+            }
+        </ul>*@
+
+        @*<h3>@TempData["Name"]</h3>
+        @{
+            TempData.Keep("Name");
+        }*@
+
+
+        <h3>@TempData.Peek("Name")</h3>
+
+        <ul>
+            @foreach (string s in (string[])TempData["employees"])
+            {
+                <li>@s</li>
+            }
+        </ul>
+        <br />
+        <a href="home/Index1">Go to Index1</a>
+
+    </div>
+</body>
+</html>

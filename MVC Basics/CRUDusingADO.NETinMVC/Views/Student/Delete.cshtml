@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+@model CRUDusingADO.NETinMVC.Models.Student
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+        <h2>Do you want delete Student :[ @Html.DisplayFor(model => model.Name)] </h2>
+
+        @using (Html.BeginForm("Delete", "Student", FormMethod.Post))
+        {
+            @Html.HiddenFor(model => model.RollNo)
+            <table>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Name)
+                    </td>
+                    <br />
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Age)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Age)
+                    </td>
+                    <br />
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Email)
+                    </td>
+                    <br />
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.DoB)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.DoB)
+                    </td>
+                    <br />
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.City)
+                    </td>
+                    <br />
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.TrainerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.TrainerId)
+                    </td>
+                    <br />
+                </tr>
+                <td>
+                    <input type="submit" value="Delete" />
+                </td>
+                <td>
+                    <input type="submit" value="Reset" />
+                </td>
+                <br />
+            </table>
+
+
+            if (ViewBag.Error != null)
+            {
+                <p> @ViewBag.Error . Student Deletion Failed </p>
+            }
+        }
+    </div>
+</body>
+</html>

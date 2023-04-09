@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CRUDusingEFDBFirstinMVC.Models.student>
+
+@{
+    ViewBag.Title = "StudentsByTrainer";
+}
+
+<h2>StudentsByTrainer</h2>
+
+<p>
+    @Html.ActionLink("Create new Student", "Create", "students")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trainer.Name)
+        </th>
+        <th></th>
+    </tr>
+
+  @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trainer.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "students", new { id=item.RollNo }, null) |
+            @Html.ActionLink("Details", "Details", "students", new { id=item.RollNo }, null) |
+            @Html.ActionLink("Delete", "Delete", "students", new { id=item.RollNo }, null)
+        </td>
+    </tr>
+   }
+
+</table>
+@Html.ActionLink("Trainer List", "Index", "Trainers")

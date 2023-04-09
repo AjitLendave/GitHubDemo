@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="RollNo" />
+    </Key>
+    <Property Name="RollNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="DoB" Type="date" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="TrainerId" Type="int" />
+  </EntityType>
+  <EntityType Name="Trainer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__student__Trainer__37A5467C">
+    <End Role="Trainer" Type="Self.Trainer" Multiplicity="0..1" />
+    <End Role="student" Type="Self.student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="student">
+        <PropertyRef Name="TrainerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentModelStoreContainer">
+    <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trainer" EntityType="Self.Trainer" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__student__Trainer__37A5467C" Association="Self.FK__student__Trainer__37A5467C">
+      <End Role="Trainer" EntitySet="Trainer" />
+      <End Role="student" EntitySet="student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

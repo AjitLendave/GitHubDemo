@@ -1,0 +1,16 @@
+﻿@model CRUDusingEFDBFirstinMVC.Models.student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Student Details</h2>
+
+<div >
+    
+   @Html.DisplayForModel()
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RollNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
