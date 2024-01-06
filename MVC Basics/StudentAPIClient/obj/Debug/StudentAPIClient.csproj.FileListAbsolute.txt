@@ -1,5 +1,3 @@
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.csproj.AssemblyReference.cache
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.csproj.CoreCompileInputs.cache
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\StudentAPIClient.dll.config
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\StudentAPIClient.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\StudentAPIClient.pdb
@@ -55,6 +53,9 @@ D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\roslyn\VBCSCompiler.exe.conf
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\CompanyLibrary.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Microsoft.Web.Infrastructure.dll
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Newtonsoft.Json.dll
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\PlayingBlue.Favicon.dll
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Diagnostics.DiagnosticSource.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Net.Http.Extensions.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Net.Http.Formatting.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Net.Http.Primitives.dll
@@ -64,8 +65,10 @@ D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Razor.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.Deployment.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.Razor.dll
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Newtonsoft.Json.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\CompanyLibrary.pdb
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Newtonsoft.Json.xml
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\PlayingBlue.Favicon.xml
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Diagnostics.DiagnosticSource.xml
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Razor.xml
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.xml
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.Deployment.xml
@@ -73,11 +76,8 @@ D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Webpages.Razor.xm
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Helpers.xml
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Web.Mvc.xml
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.csproj.AssemblyReference.cache
+D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.csproj.CoreCompileInputs.cache
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.csproj.CopyComplete
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.dll
 D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\obj\Debug\StudentAPIClient.pdb
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\Newtonsoft.Json.xml
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\PlayingBlue.Favicon.dll
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Diagnostics.DiagnosticSource.dll
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\PlayingBlue.Favicon.xml
-D:\Ajit\B1DBMVCDemo\MVC Basics\StudentAPIClient\bin\System.Diagnostics.DiagnosticSource.xml

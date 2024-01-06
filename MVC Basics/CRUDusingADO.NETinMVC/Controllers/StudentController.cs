@@ -15,7 +15,6 @@ namespace CRUDusingADO.NETinMVC.Controllers
         public ActionResult Index()
         {
             List<Student> students = db.GetStudents();
-
             return View(students);
         }
 
@@ -38,7 +37,7 @@ namespace CRUDusingADO.NETinMVC.Controllers
             //Student student = new Student() 
             //{
 
-            //    Name = Name,
+            //     Name = Name,
             //    Age = Convert.ToInt32(Age),
             //    Email = Email,
             //    DoB = Convert.ToDateTime(DoB),
@@ -47,7 +46,7 @@ namespace CRUDusingADO.NETinMVC.Controllers
             //};
 
 
-            //Student student = new Student()   
+            //Student student = new Student()
             //{
             //    Name = form["Name"],
             //    Age = Convert.ToInt32(form["Age"]),
@@ -74,7 +73,7 @@ namespace CRUDusingADO.NETinMVC.Controllers
         }
         public ActionResult Details(int? rollnumber)
         {
-            //I want to details of student fron database & show in UI
+            //I want to details of student from database & show in UI
 
             Student student = db.GetStudent(rollnumber ?? 0);  //null hai to 0 lo
                
@@ -129,5 +128,6 @@ namespace CRUDusingADO.NETinMVC.Controllers
                 return View();  //Student Deletion Failed & Stay on delete page
             }
         }
+
     }
 }
